@@ -1,17 +1,48 @@
 # Eclipsed Sky Studios Chatbot
 
-This is a basic chatbot for the Eclipsed Sky Studios website. It helps visitors find information about studio hours, headshot pricing, and directions.
+A custom AI-powered website assistant built with IBM Watson Assistant to support photography clients on the Eclipsed Sky Studios website.
 
-## Features
+![Bot Screenshot](screenshots/chatbot-ui.png)
 
-- **Directions:** Provides studio address and how to get there.
-- **Headshot Pricing:** Explains available packages and prices.
-- **Hours:** Shares studio opening hours.
+## 🧠 Features
 
-## How to Use
+- 💬 **Greeting** – Welcomes site visitors warmly
+- 🕒 **Studio Hours** – Provides accurate operating times
+- 📍 **Directions** – Shares studio address & how to get there
+- 💸 **Pricing Info** – Explains headshot packages and pricing
 
-Just ask the chatbot a question about hours, pricing, or directions!
+## 🛠️ Built With
 
-## About
+- **IBM Watson Assistant**
+  - Dialogs (intents, entities, and dialog nodes)
+  - Multi-turn conversation handling
+- Integrated into a website via Watson Assistant web chat embed
 
-Created for Eclipsed Sky Studios as a helpful assistant for website visitors.
+## 🧭 Dialog Flow
+
+The assistant follows a structured flow:
+1. Welcome Node
+2. Intent Recognition
+   - `#hours`, `#pricing`, `#directions`
+3. Routes to matching Dialog Nodes
+4. Fallback Node (`#anything_else`) for unrecognized input
+
+![Dialog Flow](flowcharts/dialog-map.png)
+
+## 🧪 Sample Questions
+
+- “What are your hours?”
+- “How much are headshots?”
+- “Where is your studio?”
+
+## 📎 Screenshots
+
+See `/screenshots/` folder for:
+- Chatbot UI on homepage
+- Backend dialog tree view
+
+---
+
+## 📂 Folder Structure
+
+
